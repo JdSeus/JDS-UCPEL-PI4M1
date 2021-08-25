@@ -1,3 +1,12 @@
 h1 {
     font-size: $f64;
 }
+
+.carousel {
+    padding: 0 $mobilegrid;
+}
+@media (min-width: $lg) {
+.carousel {
+    padding: 0 $desktopgrid;
+}
+}

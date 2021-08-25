@@ -1,3 +1,8 @@
 export default function () { 
-    console.log("a");
+    $('.carousel-container').slick({
+        dots: true,
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1
+    });
 }

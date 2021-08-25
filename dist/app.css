@@ -375,6 +375,15 @@ h1 {
   font-size: 4rem;
 }
 
+.carousel {
+  padding: 0 5rem;
+}
+
+@media (min-width: 992px) {
+  .carousel {
+    padding: 0 15vw;
+  }
+}
 header .header-up {
   padding: 0 5rem;
   background-color: black;
