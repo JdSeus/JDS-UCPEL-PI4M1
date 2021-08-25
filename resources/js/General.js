@@ -4,11 +4,13 @@ export default class General {
     route;
     
     static menuLinks = [
+        /*
         {link: "#", text: "Início"},
         {link: "#", text: "Sobre"},
         {link: "#", text: "Serviços Oferecidos"},
         {link: "#", text: "Páginas Relacionadas"},
         {link: "#", text: "Contato"},
+        */
     ]
 
     initializePage = function() {

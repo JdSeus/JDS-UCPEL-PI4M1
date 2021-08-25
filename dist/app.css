@@ -113,6 +113,18 @@ input[type=search]::-webkit-search-decoration {
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: OpenSansRegular;
+  src: url("./fonts/OpenSans-Regular.ttf");
+}
+@font-face {
+  font-family: OpenSansBold;
+  src: url("./fonts/OpenSans-Bold.ttf");
+}
+@font-face {
+  font-family: OpenSansLight;
+  src: url("./fonts/OpenSans-Light.ttf");
+}
 /*1px*/
 /*2px*/
 /*3px*/
@@ -257,8 +269,66 @@ h1 {
   font-size: 4rem;
 }
 
-header {
+header .header-up {
+  padding: 0 5rem;
   background-color: black;
+}
+header .header-up .header-logo {
+  position: relative;
+  width: 20rem;
+}
+header .header-up .header-logo a {
+  display: block;
+  position: relative;
+  height: 100%;
+}
+header .header-up .header-logo a img {
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+header .header-content {
+  position: relative;
+  background-color: #b6ddff;
+  padding: 0 5rem;
+  display: none;
+  justify-content: space-between;
+  align-items: stretch;
+  height: 3.75rem;
+}
+header .header-content #menu {
+  position: relative;
+  display: flex;
+}
+header .header-content #menu .menu-link {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
+}
+header .header-content #menu .menu-link.active {
+  background-color: #d9e7f3;
+  border-bottom: 0.25rem solid blue;
+}
+header .header-content .search-container .search {
+  display: block;
+  background-color: red;
+  height: 2em;
+}
+
+@media (min-width: 992px) {
+  header .header-up {
+    padding: 0 15vw;
+  }
+  header .header-content {
+    padding: 0 15vw;
+    display: flex;
+  }
+}
+html {
+  font-family: OpenSansLight;
+  font-weight: bold;
 }
 
 /*# sourceMappingURL=app.css.map */

@@ -1,3 +1,63 @@
 header {
-    background-color: black;
+    .header-up {
+        padding: 0 $mobilegrid;
+        background-color: black;
+        .header-logo {
+            position: relative;
+            width: 20rem;
+            a {
+                display: block;
+                position: relative;
+                height: 100%;
+                img {
+                    max-width: 100%;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+    .header-content {
+        position: relative;
+        background-color: rgb(182, 221, 255);
+        padding: 0 $mobilegrid;
+        display: none;
+        justify-content: space-between;
+        align-items: stretch;
+        height: $f60;
+        #menu {
+            position: relative;
+            display: flex;
+            .menu-link {
+                height: 100%;
+                display: flex;
+                align-items: center;
+                padding: 0 1rem;
+            }
+            .menu-link.active {
+                background-color: rgb(217, 231, 243);
+                border-bottom: $f4 solid blue;
+            }
+        }
+        .search-container {
+            .search {
+                display: block;
+                background-color: red;
+                height: 2em;
+            }
+        }
+    }
+}
+
+@media (min-width: $lg) {
+header {
+    .header-up {
+        padding: 0 $desktopgrid;
+    }
+    .header-content {
+        padding: 0 $desktopgrid;
+        display: flex;
+    }
+}
 }
