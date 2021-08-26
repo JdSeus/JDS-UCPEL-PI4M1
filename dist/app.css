@@ -393,39 +393,52 @@ h1 {
 }
 
 .carousel {
-  padding: 0 5rem;
+  position: relative;
+  margin: 0 5rem;
 }
-
-@media (min-width: 992px) {
-  .carousel {
-    padding: 0 15vw;
-  }
+.carousel .carousel-arrows {
+  z-index: 999;
+  position: absolute;
+  width: 90%;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  display: flex;
+  justify-content: space-between;
 }
-.carousel-item {
+.carousel .carousel-container {
+  height: 40rem;
+}
+.carousel .carousel-container .carousel-item {
   position: relative;
   height: 40rem;
 }
-.carousel-item .carousel-item-background {
+.carousel .carousel-container .carousel-item .carousel-item-background {
   position: absolute;
   height: 40rem;
   width: 100%;
 }
-.carousel-item .carousel-item-content {
+.carousel .carousel-container .carousel-item .carousel-item-content {
   height: 40rem;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
-.carousel-item .carousel-item-content h1 {
+.carousel .carousel-container .carousel-item .carousel-item-content h1 {
   font-size: 5rem;
   color: white;
 }
-.carousel-item .carousel-item-content p {
+.carousel .carousel-container .carousel-item .carousel-item-content p {
   font-size: 3rem;
   color: white;
 }
 
+@media (min-width: 992px) {
+  .carousel {
+    margin: 0 15vw;
+  }
+}
 header .header-up {
   padding: 0 5rem;
   background-color: black;
@@ -483,6 +496,16 @@ header .header-content .search-container .search {
     display: flex;
   }
 }
+.arrow-icon {
+  width: 5rem;
+  height: 5rem;
+  fill: white;
+}
+
+.arrow-icon.left {
+  transform: scaleX(-1);
+}
+
 html {
   font-family: OpenSansLight;
   font-weight: bold;
