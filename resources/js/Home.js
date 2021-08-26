@@ -1,8 +1,12 @@
 export default function () { 
     $('.carousel-container').slick({
-        dots: true,
-        infinite: true,
-        slidesToShow: 1,
-        slidesToScroll: 1
+        fade: true,
+        arrows: true,
+        prevArrow: $('section.carousel .carousel-arrows .left'),
+        nextArrow: $('section.carousel .carousel-arrows .right'),
+
+        
     });
+    console.log( $('section.carousel .carousel-arrows'));
+
 }

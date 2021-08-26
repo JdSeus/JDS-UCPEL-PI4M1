@@ -10,3 +10,28 @@ h1 {
     padding: 0 $desktopgrid;
 }
 }
+
+.carousel-item {
+    position: relative;
+    height: 40rem;
+    .carousel-item-background {
+        position: absolute;
+        height: 40rem;
+        width: 100%;
+    }
+    .carousel-item-content {
+        height: 40rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        h1 {
+            font-size: 5rem;
+            color: white;
+        }
+        p {
+            font-size: 3rem;
+            color: white;
+        }
+    }
+}
