@@ -429,8 +429,8 @@ h1 {
   font-size: 5rem;
   color: white;
 }
-.carousel .carousel-container .carousel-item .carousel-item-content p {
-  font-size: 3rem;
+.carousel .carousel-container .carousel-item .carousel-item-content h2 {
+  font-size: 1.5rem;
   color: white;
 }
 
