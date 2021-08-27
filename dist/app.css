@@ -479,19 +479,20 @@ header .header-content .search-container .search {
 .carousel {
   position: relative;
   margin: 0 5vw;
+  padding-bottom: 10rem;
 }
 .carousel .carousel-arrows {
   z-index: 999;
   position: absolute;
-  width: 90%;
-  top: 50%;
+  width: 80%;
+  bottom: 0;
   left: 50%;
   transform: translateY(-50%) translateX(-50%);
   display: flex;
   justify-content: space-between;
 }
-.carousel .carousel-container {
-  height: 40rem;
+.carousel .carousel-arrows .arrow-icon {
+  fill: black;
 }
 .carousel .carousel-container .carousel-item {
   position: relative;
@@ -510,10 +511,12 @@ header .header-content .search-container .search {
   flex-direction: column;
 }
 .carousel .carousel-container .carousel-item .carousel-item-content h1 {
-  font-size: 5rem;
+  text-align: center;
+  font-size: 2rem;
   color: white;
 }
 .carousel .carousel-container .carousel-item .carousel-item-content h2 {
+  text-align: center;
   font-size: 1.5rem;
   color: white;
 }
@@ -521,6 +524,29 @@ header .header-content .search-container .search {
 @media (min-width: 992px) {
   .carousel {
     margin: 0 15vw;
+    padding-bottom: 0;
+  }
+  .carousel .carousel-arrows {
+    width: 90%;
+    bottom: auto;
+    top: 80%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+  }
+  .carousel .carousel-arrows .arrow-icon {
+    fill: white;
+  }
+  .carousel .carousel-container .carousel-item .carousel-item-content h1 {
+    font-size: 3.5rem;
+  }
+}
+@media (min-width: 1400px) {
+  .carousel .carousel-arrows {
+    width: 90%;
+    bottom: auto;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
   }
 }
 section.posts-gallery-carousel {

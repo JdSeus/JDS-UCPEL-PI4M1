@@ -2,18 +2,21 @@
 .carousel {
     position: relative;
     margin: 0 $mobilegrid;
+    padding-bottom: 10rem;
     .carousel-arrows {
         z-index: 999;
         position: absolute;
-        width: 90%;
-        top: 50%;
+        width: 80%;
+        bottom: 0;
         left: 50%;
         transform: translateY(-50%) translateX(-50%);
         display: flex;
         justify-content: space-between;
+        .arrow-icon {
+            fill: black;
+        }
     }
     .carousel-container {
-        height: 40rem;
         .carousel-item {
             position: relative;
             height: 40rem;
@@ -29,10 +32,12 @@
                 align-items: center;
                 flex-direction: column;
                 h1 {
-                    font-size: 5rem;
+                    text-align: center;
+                    font-size: 2rem;
                     color: white;
                 }
                 h2 {
+                    text-align: center;
                     font-size: 1.5rem;
                     color: white;
                 }
@@ -45,5 +50,37 @@
 @media (min-width: $lg) {
 .carousel {
     margin: 0 $desktopgrid;
+    padding-bottom: 0;
+    .carousel-arrows {
+        width: 90%;
+        bottom: auto;
+        top: 80%;
+        left: 50%;
+        transform: translateY(-50%) translateX(-50%);
+        .arrow-icon {
+            fill: white;
+        }
+    }
+    .carousel-container {
+        .carousel-item {
+            .carousel-item-content {
+                h1 {
+                    font-size: 3.5rem;
+                }
+            }
+        }
+    }
+}
+}
+
+@media (min-width: $xxl) {
+.carousel {
+    .carousel-arrows {
+        width: 90%;
+        bottom: auto;
+        top: 50%;
+        left: 50%;
+        transform: translateY(-50%) translateX(-50%);
+    }
 }
 }
