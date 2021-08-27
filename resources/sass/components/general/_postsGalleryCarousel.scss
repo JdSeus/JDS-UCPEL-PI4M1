@@ -1,7 +1,7 @@
 
-.posts-gallery-carousel {
+section.posts-gallery-carousel {
     position: relative;
-
+    
     .slick-list {
         margin: 0 0.5rem;
         padding: 1rem 0;
@@ -18,10 +18,9 @@
         justify-content: space-between;
     }
     .posts-gallery-carousel-container {
-        height: 40rem;
+        background-color: bisque;
         .posts-gallery-item {
             position: relative;
-
             margin: 0 0.5rem;
             .posts-gallery-item-image {
                 height: 15rem;
@@ -31,6 +30,13 @@
                     height: 100%;
                     max-width: 100%;
                     object-fit: cover;
+                }
+            }
+            .posts-gallery-item-content {
+                border: 1px solid rgba($color: #000000, $alpha: 0.3);
+                padding: 1rem;
+                h2 {
+                    font-family: OpenSansBold;
                 }
             }
         }
