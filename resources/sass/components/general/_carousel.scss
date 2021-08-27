@@ -1,0 +1,49 @@
+
+.carousel {
+    position: relative;
+    margin: 0 $mobilegrid;
+    .carousel-arrows {
+        z-index: 999;
+        position: absolute;
+        width: 90%;
+        top: 50%;
+        left: 50%;
+        transform: translateY(-50%) translateX(-50%);
+        display: flex;
+        justify-content: space-between;
+    }
+    .carousel-container {
+        height: 40rem;
+        .carousel-item {
+            position: relative;
+            height: 40rem;
+            .carousel-item-background {
+                position: absolute;
+                height: 40rem;
+                width: 100%;
+            }
+            .carousel-item-content {
+                height: 40rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                h1 {
+                    font-size: 5rem;
+                    color: white;
+                }
+                h2 {
+                    font-size: 1.5rem;
+                    color: white;
+                }
+            }
+        }
+    }
+
+
+}
+@media (min-width: $lg) {
+.carousel {
+    margin: 0 $desktopgrid;
+}
+}

@@ -1,8 +1,15 @@
 .arrow-icon {
     width: 5rem;
     height: 5rem;
-    fill: white;
 }
 .arrow-icon.left {
     transform: scaleX(-1);
+}
+
+.arrow-icon.white {
+    fill: white;
+}
+
+.arrow-icon.black {
+    fill: black;
 }

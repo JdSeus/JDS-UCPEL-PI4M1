@@ -1,0 +1,10 @@
+.container-grid {
+    position: relative;
+    padding: 0 $mobilegrid;
+}
+
+@media (min-width: $lg) {
+.container-grid {
+    padding: 0 $desktopgrid;
+}
+}
