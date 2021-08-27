@@ -12,6 +12,20 @@ export default function () {
         slidesToScroll: 1,
         prevArrow: $('section.posts-gallery-carousel .posts-gallery-carousel-arrows .left'),
         nextArrow: $('section.posts-gallery-carousel .posts-gallery-carousel-arrows .right'), 
+        responsive: [
+            {
+              breakpoint: 900,
+              settings: {
+                slidesToShow: 2
+              }
+            },
+            {
+              breakpoint: 600,
+              settings: {
+                slidesToShow: 1
+              }
+            }
+        ]
     });
 
 }
