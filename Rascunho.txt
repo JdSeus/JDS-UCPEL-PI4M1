@@ -1,0 +1,39 @@
+
+Possível tema para o conteúdo: Lugares para visitar no Brasil
+
+Classes:
+Content - conterá todas as informações "dinâmicas" do site, como nome, informaçoes do carrousel, rodapé, e etc
+
+Main - Classe principal do projeto
+
+Vendor - Classe que registra as bibliotecas utilizadas
+
+Constructor - Construtor generico da qual as classes da pagina extendem
+
+Home - COnstrutora da home com base em COntent;
+About - COnstrutora da home com base em COntent;
+Service - COnstrutora da home com base em COntent;
+Pages - COnstrutora da home com base em COntent;
+Blog - COnstrutora da home com base em COntent;
+Contact - COnstrutora da home com base em COntent;
+
+Enfoque:
+Construir a site através de uma classe estática contendo os conteúdos;
+
+
+Requisitos Funcionais:
+Construir a site através de uma classe estática contendo os conteúdos;
+Puxar ano atual para o rodapé.
+O site terá uma aba para o menu;
+O site terá um carrosel;
+O site terá blocos de conteudo
+Criacao de Rodapé
+
+
+Não Funcionais:
+Minificar CSS e Javascript
+É necessário um servidor local ou externo
+CSS gerado através de SASS
+Utilizar módulos Javascript para a organizacao
+Ser responsivo
+Utilizar biblioteca externa para o Carrossel
