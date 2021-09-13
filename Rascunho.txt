@@ -10,12 +10,16 @@ Vendor - Classe que registra as bibliotecas utilizadas
 
 Constructor - Construtor generico da qual as classes da pagina extendem
 
+Router - Vê a pagina Atual para ver qual constructor chamar
+
 Home - COnstrutora da home com base em COntent;
 About - COnstrutora da home com base em COntent;
 Service - COnstrutora da home com base em COntent;
 Pages - COnstrutora da home com base em COntent;
 Blog - COnstrutora da home com base em COntent;
 Contact - COnstrutora da home com base em COntent;
+
+
 
 Enfoque:
 Construir a site através de uma classe estática contendo os conteúdos;
