@@ -1,4 +1,9 @@
-export default function () { 
+import PageConstructor from './PageConstructor.js';
+
+export default class Home {
+
+  static homeBuilder() {
+
     $('section.carousel  .carousel-container').slick({
         fade: true,
         arrows: true,
@@ -28,4 +33,7 @@ export default function () {
         ]
     });
 
+    console.log("Home buildada")
+
+  }
 }

@@ -1,4 +1,5 @@
 import Vendor from './vendor/vendor.js';
+import Router from './Router.js';
 import General from './General.js';
 import Home from './Home.js';
 import Content from './Content.js';
@@ -8,6 +9,10 @@ export default class Main {
 
 static main = function() {
     Vendor();
+
+    var router = new Router();
+    router.initializePage();
+
     /*
     Vendor();
     const pageInformation = new General();
@@ -20,13 +25,14 @@ static main = function() {
         }
     }
     */
-
+/*
     const content = new Content();
     console.log(content.appInformation);
     console.log(content.home);
 
     const pageBuilder = new PageConstructor();
     pageBuilder.createMenu("nada");
+    */
 }
 
 }
