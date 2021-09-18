@@ -12,12 +12,12 @@ export default class Home {
     const home = content.home;
 
     const carouselItems = home.content.carousel;
+    const postsGalleryItems = home.content.postsGallery;
 
     pageBuilder.setPageTitle(home.title);
     pageBuilder.createMenu(menuLinks, currentRoute);
     pageBuilder.createCarousel(carouselItems);
-
-    console.log(home);
+    pageBuilder.createPostsGallery(postsGalleryItems);
 
     setTimeout(() => {
       this.homeJavascript();
@@ -55,6 +55,5 @@ export default class Home {
         ]
     });
 
-    console.log("Home buildada")
   }
 }
