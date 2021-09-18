@@ -28,7 +28,7 @@ export default class Router {
         if (this.route) {
             switch (this.route) {
                 case 'home':
-                  Home.homeBuilder();
+                  Home.homeBuilder(this.route);
                   break;
                 default:
                   console.log(`Rota inválida!`);

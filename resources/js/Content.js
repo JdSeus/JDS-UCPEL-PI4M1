@@ -3,11 +3,11 @@ export default class Content {
     appInformation = "teste";
 
     menuLinks = [
-        {link: "#", text: "Início", selected: true},
-        {link: "#", text: "Sobre"},
-        {link: "#", text: "Serviços Oferecidos"},
-        {link: "#", text: "Páginas Relacionadas"},
-        {link: "#", text: "Contato"},
+        {link: "#", text: "Início", route: "home"},
+        {link: "#", text: "Sobre", route: "about"},
+        {link: "#", text: "Serviços Oferecidos", route: "services"},
+        {link: "#", text: "Páginas Relacionadas", route: "related"},
+        {link: "#", text: "Contato", route: "contact"},
     ]
 
     home = {

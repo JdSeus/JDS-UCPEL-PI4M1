@@ -1,28 +1,24 @@
-export default class PageConstructor {
+export default class PageBuilder {
 
     reference = "#app";
 
-    createMenu = function(pages) {
+    setPageTitle = function(title) {
+        document.title = title;
+    }
 
-        var route = 'home';
-        var menuLinks = [
-            {link: "#", text: "A", selected: true},
-            {link: "#", text: "B"},
-            {link: "#", text: "Serviços Oferecidos"},
-            {link: "#", text: "Páginas Relacionadas"},
-            {link: "#", text: "Contato"},
-        ]
+    createMenu = function(menuLinks, route) {
 
-        var links = '';
+        var linkElements = '';
+
         menuLinks.forEach((el) => {
-            if (el.selected && el.selected == true) {
-                links = links + `
+            if (el.route == route) {
+                linkElements = linkElements + `
                     <div class="menu-link active">
                         <a href="`+ el.link +`">`+ el.text +`</a>
                     </div>
                 `
             } else {
-                links = links + `
+                linkElements = linkElements + `
                     <div class="menu-link">
                         <a href="`+ el.link +`">`+ el.text +`</a>
                     </div>
@@ -40,7 +36,7 @@ export default class PageConstructor {
             <div class="header-content">
                 <nav id="menu">
                     `
-                    + links +
+                    + linkElements +
                     `
                 </nav>
                 <div class="search-container">
@@ -52,21 +48,4 @@ export default class PageConstructor {
       
         $(this.reference).append(menu);
     }
-
-    appInformation = "teste";
-
-    menuLinks = [
-        {link: "#", text: "Início"},
-        {link: "#", text: "Sobre"},
-        {link: "#", text: "Serviços Oferecidos"},
-        {link: "#", text: "Páginas Relacionadas"},
-        {link: "#", text: "Contato"},
-    ]
-
-    home = {
-        title: "Home",
-        content: "asdsadsad"
-    }
-
-
 }

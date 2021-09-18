@@ -2,8 +2,6 @@ import Vendor from './vendor/vendor.js';
 import Router from './Router.js';
 import General from './General.js';
 import Home from './Home.js';
-import Content from './Content.js';
-import PageConstructor from './PageConstructor.js';
 
 export default class Main { 
 
