@@ -12,7 +12,14 @@ export default class Content {
 
     home = {
         title: "Home",
-        content: "asdsadsad"
+        content: {
+            carousel: [
+                {title: "Bem Vindo ao Nosso Site", subtitle: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ac sodales ante.", image: "./dist/images/montain.jpg", alt: "Montanha"},
+                {title: "Bem Vindo ao Nosso Site", subtitle: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ac sodales ante.", image: "./dist/images/forest.jpg", alt: "Floresta"},
+                {title: "Bem Vindo ao Nosso Site", subtitle: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ac sodales ante.", image: "./dist/images/sand.jpg", alt: "Areia"},
+                {title: "Bem Vindo ao Nosso Site", subtitle: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ac sodales ante.", image: "./dist/images/everest.jpg", alt: "Monte Everest"},
+            ]
+        }
     }
 
 

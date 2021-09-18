@@ -11,12 +11,18 @@ export default class Home {
     const menuLinks = content.menuLinks;
     const home = content.home;
 
+    const carouselItems = home.content.carousel;
+
     pageBuilder.setPageTitle(home.title);
     pageBuilder.createMenu(menuLinks, currentRoute);
+    pageBuilder.createCarousel(carouselItems);
 
     console.log(home);
 
-    this.homeJavascript();
+    setTimeout(() => {
+      this.homeJavascript();
+    }, 500);
+    
   }
 
   static homeJavascript() {
