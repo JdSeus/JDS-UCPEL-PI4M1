@@ -560,6 +560,17 @@ header .header-content .search-container .search {
     transform: translateY(-50%) translateX(-50%);
   }
 }
+@media (max-width: 500px) {
+  .carousel .carousel-container .carousel-item {
+    height: 20rem;
+  }
+  .carousel .carousel-container .carousel-item .carousel-item-background {
+    height: 20rem;
+  }
+  .carousel .carousel-container .carousel-item .carousel-item-content {
+    height: 20rem;
+  }
+}
 section.posts-gallery-carousel {
   position: relative;
 }

@@ -44,9 +44,8 @@
             }
         }
     }
-
-
 }
+
 @media (min-width: $lg) {
 .carousel {
     margin: 0 $desktopgrid;
@@ -81,6 +80,22 @@
         top: 50%;
         left: 50%;
         transform: translateY(-50%) translateX(-50%);
+    }
+}
+}
+
+@media (max-width: 500px) {
+.carousel {
+    .carousel-container {
+        .carousel-item {
+            height: 20rem;
+            .carousel-item-background {
+                height: 20rem;
+            }
+            .carousel-item-content {
+                height: 20rem;
+            }
+        }
     }
 }
 }
