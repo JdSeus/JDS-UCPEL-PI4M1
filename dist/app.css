@@ -468,6 +468,7 @@ footer {
 footer .footer-items-container {
   display: flex;
   position: relative;
+  margin: 0 5vw;
 }
 footer .footer-items-container .footer-item {
   padding: 3rem;
@@ -484,6 +485,11 @@ footer .footer-items-container .footer-item .footer-posts .footer-post-item p {
   margin-bottom: 0;
 }
 
+@media (min-width: 992px) {
+  footer .footer-items-container {
+    margin: 0 15vw;
+  }
+}
 .arrow-icon {
   width: 5rem;
   height: 5rem;
