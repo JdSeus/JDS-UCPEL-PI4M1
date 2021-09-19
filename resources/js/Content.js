@@ -27,4 +27,17 @@ export default class Content {
             ]
         }
     }
+
+    general = {
+        copyrightAndSocial: {
+            copyright: "© "+ new Date().getFullYear() + " Web World. All rights reserved. Theme by cssautther",
+            socialmedia: [
+                {icon: "logo-rss", link: "#"},
+                {icon: "logo-facebook", link: "#"},
+                {icon: "logo-twitter", link: "#"},
+                {icon: "logo-linkedin", link: "#"},
+            ]
+        }
+    }
+
 }

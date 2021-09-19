@@ -10,14 +10,17 @@ export default class Home {
 
     const menuLinks = content.menuLinks;
     const home = content.home;
+    const general = content.general;
 
     const carouselItems = home.content.carousel;
     const postsGalleryItems = home.content.postsGallery;
+    const copyrightAndSocial = general.copyrightAndSocial;
 
     pageBuilder.setPageTitle(home.title);
     pageBuilder.createMenu(menuLinks, currentRoute);
     pageBuilder.createCarousel(carouselItems);
     pageBuilder.createPostsGallery(postsGalleryItems);
+    pageBuilder.createCopyrightAndSocial(copyrightAndSocial.copyright, copyrightAndSocial.socialmedia);
 
     setTimeout(() => {
       this.homeJavascript();
