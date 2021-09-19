@@ -7,10 +7,12 @@ footer {
 
     .footer-items-container {
         display: flex;
+        flex-direction: column;
         position: relative;
         margin: 0 $mobilegrid;
         .footer-item {
-            padding: 3rem;
+            padding: 1rem;
+            margin-bottom: 1rem;
             width: 100%;
             h3 {
                 font-size: $f24;
@@ -31,11 +33,16 @@ footer {
     }
 }
 
-@media (min-width: $lg) {
+@media (min-width: $xl) {
 footer {
-    
     .footer-items-container {
         margin: 0 $desktopgrid;
+        flex-direction: row;
+        .footer-item {
+            padding: 2rem;
+            margin-bottom: 0;
+            margin-top: 0;
+        }
     }
 }
 }

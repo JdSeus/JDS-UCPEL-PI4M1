@@ -61,3 +61,19 @@ header {
     }
 }
 }
+
+@media (max-width: 350px) {
+header {
+    .header-up {
+        .header-logo {
+            width: auto;
+            a {
+                text-align: center;
+                img {
+                    width: 15rem;
+                }
+            }
+        }
+    }
+}
+}

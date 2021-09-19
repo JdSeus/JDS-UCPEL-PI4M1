@@ -6,19 +6,24 @@
 
     .copyright-and-social-items-container {
         margin: 0 $mobilegrid;
-        padding: 1rem 3rem;
+        padding: 1rem 1rem;
         display: flex;
         position: relative;
         align-items: center;
+        flex-direction: column-reverse;
         .copyright-and-social-item {
             width: 100%;
+            .copyright {
+                margin-top: 1rem;
+            }
             .social-media {
-                display: flex;
                 position: relative;
-                justify-content: right;
+                display: flex;
+                flex-direction: row;
+                justify-content: left;
                 .social-item {
                     font-size: 3rem;
-                    margin: 0 1rem;
+                    margin-right: 1rem;
                 }
             }
         }
@@ -29,6 +34,32 @@
 .copyright-and-social {
     .copyright-and-social-items-container {
         margin: 0 $desktopgrid;
+        flex-direction: row;
+        padding: 1rem 1rem;
+        .copyright-and-social-item {
+            .copyright {
+                margin-top: 0;
+            }
+            .social-media {
+                display: flex;
+                flex-direction: row;
+                justify-content: right;
+            }
+        }
+    }
+}
+}
+
+@media (max-width: 350px) {
+.copyright-and-social {
+    .copyright-and-social-items-container {
+        .copyright-and-social-item {
+            .social-media {
+                .social-item {
+                    font-size: 2rem;
+                }
+            }
+        }
     }
 }
 }
