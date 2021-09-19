@@ -1,7 +1,8 @@
 import MenuBuild from './components/menu.js';
 import CarouselBuild from './components/carousel.js';
-import PostsGallery from './components/postsGallery.js';
-import CopyrightAndSocial from './components/copyrightAndSocial.js';
+import PostsGalleryBuild from './components/postsGallery.js';
+import FooterBuild from './components/footer.js';
+import CopyrightAndSocialBuild from './components/copyrightAndSocial.js';
 
 export default class PageBuilder {
 
@@ -20,10 +21,14 @@ export default class PageBuilder {
     }
 
     createPostsGallery = function(items) {
-        PostsGallery(items, this.reference);
+        PostsGalleryBuild(items, this.reference);
+    }
+
+    createFooter = function(footerItems) {
+        FooterBuild(footerItems, this.reference);
     }
 
     createCopyrightAndSocial = function(copyright, socialmedia) {
-        CopyrightAndSocial(copyright, socialmedia, this.reference);
+        CopyrightAndSocialBuild(copyright, socialmedia, this.reference);
     }
 }

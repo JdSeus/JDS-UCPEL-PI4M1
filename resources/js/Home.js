@@ -14,12 +14,14 @@ export default class Home {
 
     const carouselItems = home.content.carousel;
     const postsGalleryItems = home.content.postsGallery;
+    const footer = general.footer;
     const copyrightAndSocial = general.copyrightAndSocial;
 
     pageBuilder.setPageTitle(home.title);
     pageBuilder.createMenu(menuLinks, currentRoute);
     pageBuilder.createCarousel(carouselItems);
     pageBuilder.createPostsGallery(postsGalleryItems);
+    pageBuilder.createFooter(footer.footerItems);
     pageBuilder.createCopyrightAndSocial(copyrightAndSocial.copyright, copyrightAndSocial.socialmedia);
 
     setTimeout(() => {

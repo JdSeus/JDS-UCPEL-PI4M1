@@ -33,43 +33,53 @@ export default class Content {
             footerItems: [
                 {
                     title: "Popular Posts",
-                    content: {
-                        footerPosts: [
-                            {text: "Lorem Ipsum is simply dummy text of the printing.", date: "25-Semptember 2013"},
-                            {text: "Lorem Ipsum is simply dummy text of the printing.", date: "25-Semptember 2013"}
-                        ]
-                    }
+                    content: [
+                        {
+                            footerPosts: [
+                                {text: "Lorem Ipsum is simply dummy text of the printing.", date: "25-Semptember 2013"},
+                                {text: "Lorem Ipsum is simply dummy text of the printing.", date: "25-Semptember 2013"}
+                            ]
+                        }
+                    ]
                 },
                 {
                     title: "Tags",
-                    content: {
-                        tags: [
-                            {name: "apps", link:"#", size:"16px"},
-                            {name: "blog", link:"#", size:"32px"},
-                        ]
-                    }
+                    content: [
+                        {
+                                tags: [
+                                {name: "apps", link:"#", size:"16px"},
+                                {name: "blog", link:"#", size:"32px"},
+                            ]
+                        }
+                    ]
                 },
                 {
                     title: "Tags",
-                    content: {
-                        text: [
-                            {phrase: "There are many variation of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable."},
-                            {phrase: "If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything."},
-                        ]
-                    }
+                    content: [
+                        {
+                            text: [
+                                {phrase: "There are many variation of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable."},
+                                {phrase: "If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything."},
+                            ]
+                        }
+                    ]
                 },
                 {
                     title: "Get in touch",
-                    content: {
-                        text: [
-                            {phrase: "Lorem Ipsum is simply dummy of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since."},
-                        ],
-                        footerInfo: [
-                            {icon: "", info: "Texas, US"},
-                            {icon: "", info: "email@email.com"},
-                            {icon: "", info: "890-09880-45590"},
-                        ]
-                    }
+                    content: [
+                        {
+                            text: [
+                                {phrase: "Lorem Ipsum is simply dummy of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since."},
+                            ],
+                        },
+                        {
+                            footerInfo: [
+                                {icon: "location-outline", info: "Texas, US"},
+                                {icon: "mail-outline", info: "email@email.com"},
+                                {icon: "call-outline", info: "890-09880-45590"},
+                            ]
+                        },
+                    ]
                 },
             ]
         },
