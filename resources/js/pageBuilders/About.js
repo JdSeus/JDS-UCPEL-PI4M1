@@ -12,12 +12,13 @@ export default class About {
     const about = content.about;
     const general = content.general;
 
+    const aboutText = about.content.about;
     const footer = general.footer;
     const copyrightAndSocial = general.copyrightAndSocial;
 
     pageBuilder.setPageTitle(about.title);
     pageBuilder.createMenu(menuLinks, currentRoute);
-
+    pageBuilder.createAbout(aboutText.title, aboutText.subtitle, aboutText.text);
     pageBuilder.createFooter(footer.footerItems);
     pageBuilder.createCopyrightAndSocial(copyrightAndSocial.copyright, copyrightAndSocial.socialmedia);
 

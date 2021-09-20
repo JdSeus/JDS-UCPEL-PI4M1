@@ -26,7 +26,7 @@ export default function (contactTitle, contactSubtitle, button, contactFields, r
                 </label>
                 <br>
                 <br>
-                <textarea name="`+ el.nome +`" id="`+ el.id +`" cols="100" rows="10" 
+                <textarea name="`+ el.nome +`" id="`+ el.id +`" 
                 `;
                     if (el.required) {
                         inputs = inputs + 'required';

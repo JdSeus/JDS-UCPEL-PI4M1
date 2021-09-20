@@ -31,7 +31,14 @@ export default class Content {
     about = {
         title: "Sobre Nós",
         content: {
-
+            about: {
+                title: "Sobre Nós",
+                subtitle: "Um pouco sobre Nós",
+                text: [
+                    {phrase: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed faucibus volutpat magna sollicitudin luctus. Sed pretium nulla vitae mauris pulvinar, sed posuere nunc lacinia. Sed ut ipsum egestas, egestas neque sed, vestibulum nisl. Interdum et malesuada fames ac ante ipsum primis in faucibus. Fusce at euismod magna, eget semper erat. Nullam eu placerat ipsum, sed suscipit nisl. Etiam arcu arcu, euismod vitae quam at, fringilla varius enim. Curabitur finibus nibh sed nunc pharetra, id tincidunt nisl elementum. Ut viverra libero at pellentesque tristique. Donec quis dapibus leo. Integer et ligula quam. Aliquam quis neque leo."},
+                    {phrase: "Nulla varius sagittis dignissim. Mauris vestibulum non massa et sollicitudin. Suspendisse varius mollis urna ac iaculis. Ut sollicitudin nisi eget feugiat auctor. Quisque nec lectus sed est mollis imperdiet. Ut rhoncus et est eu pellentesque. Duis eleifend justo a pharetra vulputate. Sed non tempor libero, at maximus ligula. Nullam quis lacus erat. Suspendisse rutrum lectus in nibh sollicitudin, sed ultrices augue semper. Vestibulum congue varius purus, et ultricies libero vestibulum et. Suspendisse potenti."},
+                ]
+            }
         }
     }
 
