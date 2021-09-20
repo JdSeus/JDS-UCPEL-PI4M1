@@ -11,7 +11,7 @@ export default function (copyright, socialmedia, reference) {
     })
 
     var copyrightAndSocial = $(`
-        <section class="copyright-and-social">
+        <section class="copyright-and-social container-grid">
             <div class="copyright-and-social-items-container ">
                 <div class="copyright-and-social-item">
                     <div class="copyright">

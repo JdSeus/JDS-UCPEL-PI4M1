@@ -5,7 +5,6 @@
     overflow: hidden;
 
     .copyright-and-social-items-container {
-        margin: 0 $mobilegrid;
         padding: 1rem 1rem;
         display: flex;
         position: relative;
@@ -33,7 +32,6 @@
 @media (min-width: $lg) {
 .copyright-and-social {
     .copyright-and-social-items-container {
-        margin: 0 $desktopgrid;
         flex-direction: row;
         padding: 1rem 1rem;
         .copyright-and-social-item {

@@ -18,7 +18,7 @@ export default function (items, reference) {
         })
 
         var carousel = $(`
-        <section class="carousel">
+        <section class="carousel container-grid">
         <div class="carousel-arrows">
             <div class="left">
                 <svg class="arrow-icon left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">

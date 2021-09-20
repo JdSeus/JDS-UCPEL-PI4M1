@@ -1,7 +1,6 @@
 
 .carousel {
     position: relative;
-    margin: 0 $mobilegrid;
     padding-bottom: 10rem;
     .carousel-arrows {
         z-index: 999;
@@ -48,7 +47,6 @@
 
 @media (min-width: $lg) {
 .carousel {
-    margin: 0 $desktopgrid;
     padding-bottom: 0;
     .carousel-arrows {
         width: 90%;

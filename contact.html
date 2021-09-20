@@ -9,6 +9,45 @@
 <body>
     <div id="app" name="contact">
     </div>   
+    <section class="contact">
+        <h2 class="section-title">
+            Fale Conosco
+        </h2>
+        <p class="section-subtitle">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do<br>
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut<br>
+            enim ad minim veniam, quis nostrud exercitation ullamco laboris<br>
+        </p>
+        <form action="#" method="POST" id="contatoForm">
+            <div>
+                <label class="form-label" for="nome">
+                    Nome Completo:
+                </label><br>
+                <input type="text" name="nome" id="form-nome" required>
+            </div>
+            <div>
+                <label class="form-label" for="email">
+                    E-mail:
+                </label><br>
+                <input type="email" name="email" id="form-email" required>
+            </div>
+            <div>
+                <label class="form-label" for="telefone">
+                    Telefone:
+                </label><br>
+                <input type="text" name="telefone" id="form-telefone" required>
+            </div>
+            <div>
+                <label class="form-label" for="mensagem">
+                    Escreva sua mensagem:
+                </label>
+                <br>
+                <br>
+                <textarea name="mensagem" id="form-mensagem" cols="30" rows="10" required></textarea>
+            </div>
+            <button type="submit">ENVIAR</button>   
+        </form>
+    </section>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>

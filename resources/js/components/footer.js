@@ -75,7 +75,7 @@ export default function (footerItems, reference) {
     })
 
     var footer = $(`
-        <footer>
+        <footer class="container-grid">
             <div class="footer-items-container">
                 `+ footerItemsContent +`
             </div>

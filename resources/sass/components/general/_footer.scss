@@ -9,7 +9,6 @@ footer {
         display: flex;
         flex-direction: column;
         position: relative;
-        margin: 0 $mobilegrid;
         .footer-item {
             padding: 1rem;
             margin-bottom: 1rem;
@@ -36,7 +35,6 @@ footer {
 @media (min-width: $xl) {
 footer {
     .footer-items-container {
-        margin: 0 $desktopgrid;
         flex-direction: row;
         .footer-item {
             padding: 2rem;
