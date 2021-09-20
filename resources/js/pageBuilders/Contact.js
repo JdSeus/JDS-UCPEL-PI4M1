@@ -12,12 +12,14 @@ export default class Contact {
     const contact = content.contact;
     const general = content.general;
 
+    const contactForm = contact.content.form;
     const footer = general.footer;
     const copyrightAndSocial = general.copyrightAndSocial;
+    
 
     pageBuilder.setPageTitle(contact.title);
     pageBuilder.createMenu(menuLinks, currentRoute);
-
+    pageBuilder.createContact(contactForm.title, contactForm.subtitle, contactForm.button, contactForm.fields);
     pageBuilder.createFooter(footer.footerItems);
     pageBuilder.createCopyrightAndSocial(copyrightAndSocial.copyright, copyrightAndSocial.socialmedia);
 

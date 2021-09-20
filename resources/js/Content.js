@@ -52,7 +52,17 @@ export default class Content {
     contact = {
         title: "Contato",
         content: {
-
+            form: {
+                title: "Fale Conosco",
+                subtitle: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                button: "ENVIAR",
+                fields: [
+                    {label: "Nome Completo:", type: "text", name: "nome", id: "form-nome", required: true},
+                    {label: "E-mail:", type: "email", name: "email", id: "form-email", required: true},
+                    {label: "Telefone:", type: "text", name: "telefone", id: "form-telefone", required: true},
+                    {label: "Escreva sua mensagem:", type: "textarea", name: "mensagem", id: "form-mensagem", required: true},
+                ]
+            }
         }
     }
 

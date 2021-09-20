@@ -3,6 +3,7 @@ import CarouselBuild from './components/carousel.js';
 import PostsGalleryBuild from './components/postsGallery.js';
 import FooterBuild from './components/footer.js';
 import CopyrightAndSocialBuild from './components/copyrightAndSocial.js';
+import ContactBuild from './components/contact.js';
 
 export default class PageBuilder {
 
@@ -30,5 +31,9 @@ export default class PageBuilder {
 
     createCopyrightAndSocial = function(copyright, socialmedia) {
         CopyrightAndSocialBuild(copyright, socialmedia, this.reference);
+    }
+
+    createContact = function(contactTitle, contactSubtitle, button, contactFields) {
+        ContactBuild(contactTitle, contactSubtitle, button, contactFields, this.reference);
     }
 }
