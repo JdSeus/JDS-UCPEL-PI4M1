@@ -1,4 +1,8 @@
-import Home from './Home.js';
+import Home from './pageBuilders/Home.js';
+import About from './pageBuilders/About.js';
+import Services from './pageBuilders/Services.js';
+import Related from './pageBuilders/Related.js';
+import Contact from './pageBuilders/Contact.js';
 
 export default class Router {
 
@@ -30,6 +34,18 @@ export default class Router {
                 case 'home':
                   Home.homeBuilder(this.route);
                   break;
+                case 'about':
+                  About.aboutBuilder(this.route);
+                  break;
+                case 'services':
+                    Services.servicesBuilder(this.route);
+                    break;
+                case 'related':
+                    Related.relatedBuilder(this.route);
+                    break;
+                case 'contact':
+                    Contact.contactBuilder(this.route);
+                    break;
                 default:
                   console.log(`Rota inválida!`);
             }

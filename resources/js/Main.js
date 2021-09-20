@@ -2,7 +2,7 @@ import Vendor from './vendor/vendor.js';
 import JdsParallax from './vendor/JdsParallax.js';
 import Router from './Router.js';
 import General from './General.js';
-import Home from './Home.js';
+//import Home from './Home.js';
 
 export default class Main { 
 

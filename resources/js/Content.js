@@ -3,11 +3,11 @@ export default class Content {
     appInformation = "teste";
 
     menuLinks = [
-        {link: "#", text: "Início", route: "home"},
-        {link: "#", text: "Sobre", route: "about"},
-        {link: "#", text: "Serviços Oferecidos", route: "services"},
-        {link: "#", text: "Páginas Relacionadas", route: "related"},
-        {link: "#", text: "Contato", route: "contact"},
+        {link: "./home.html", text: "Início", route: "home"},
+        {link: "./about.html", text: "Sobre", route: "about"},
+        {link: "./services.html", text: "Serviços Oferecidos", route: "services"},
+        {link: "./related.html", text: "Páginas Relacionadas", route: "related"},
+        {link: "./contact.html", text: "Contato", route: "contact"},
     ]
 
     home = {
@@ -25,6 +25,34 @@ export default class Content {
                 {title: "Lorem Ipsum", text: "Lorem Ipsum", image: "./dist/images/forest.jpg", alt: "Floresta"},
                 {title: "Lorem Ipsum", text: "Lorem Ipsum", image: "./dist/images/sand.jpg", alt: "Areia"},
             ]
+        }
+    }
+
+    about = {
+        title: "Sobre Nós",
+        content: {
+
+        }
+    }
+
+    services = {
+        title: "Nossos Serviços",
+        content: {
+
+        }
+    }
+
+    related = {
+        title: "Páginas Relacionadas",
+        content: {
+
+        }
+    }
+
+    contact = {
+        title: "Contato",
+        content: {
+
         }
     }
 

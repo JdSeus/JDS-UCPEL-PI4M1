@@ -1,5 +1,5 @@
-import PageBuilder from './PageBuilder.js';
-import Content from './Content.js';
+import PageBuilder from './../PageBuilder.js';
+import Content from './../Content.js';
 
 export default class Home {
 
