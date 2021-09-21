@@ -1,0 +1,61 @@
+section.text-block {
+    background-color: rgb(131, 131, 131);
+    position: relative;
+    max-width: 100vw;
+    overflow: hidden;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    
+
+    .section-header {
+        width: auto;
+        .section-title {
+            font-size: 3rem;
+            font-weight: bold;
+            margin-bottom: 1em;
+            color: white;
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+    
+        .section-subtitle {
+            font-size: 1.5rem;
+            margin-bottom: 1.5em;
+            color: white;
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+    }
+
+    .section-text {
+        width: auto;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        color: white;
+        p {
+            margin-bottom: 1em;
+        }
+    }
+}
+
+@media (min-width: $lg) {
+section.text-block {
+    .section-header {
+        width: 50%;
+        .section-title {
+            padding-left: 2rem;
+            padding-right: 2rem;
+        }
+    
+        .section-subtitle {
+            padding-left: 2rem;
+            padding-right: 2rem;
+        }
+    }
+    .section-text {
+        padding-left: 2rem;
+        padding-right: 2rem;
+        width: 50%;
+    }
+}   
+}

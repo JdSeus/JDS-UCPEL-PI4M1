@@ -12,12 +12,13 @@ export default class Services {
     const services = content.services;
     const general = content.general;
 
+    const textBlock = services.content.textblock;
     const footer = general.footer;
     const copyrightAndSocial = general.copyrightAndSocial;
 
     pageBuilder.setPageTitle(services.title);
     pageBuilder.createMenu(menuLinks, currentRoute);
-
+    pageBuilder.createTextBlock(textBlock.title, textBlock.subtitle, textBlock.text);
     pageBuilder.createFooter(footer.footerItems);
     pageBuilder.createCopyrightAndSocial(copyrightAndSocial.copyright, copyrightAndSocial.socialmedia);
 

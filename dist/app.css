@@ -713,6 +713,60 @@ footer .footer-items-container .footer-item .footer-posts .footer-post-item p {
     font-size: 2rem;
   }
 }
+section.text-block {
+  background-color: #838383;
+  position: relative;
+  max-width: 100vw;
+  overflow: hidden;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+section.text-block .section-header {
+  width: auto;
+}
+section.text-block .section-header .section-title {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1em;
+  color: white;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+section.text-block .section-header .section-subtitle {
+  font-size: 1.5rem;
+  margin-bottom: 1.5em;
+  color: white;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+section.text-block .section-text {
+  width: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  color: white;
+}
+section.text-block .section-text p {
+  margin-bottom: 1em;
+}
+
+@media (min-width: 992px) {
+  section.text-block .section-header {
+    width: 50%;
+  }
+  section.text-block .section-header .section-title {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  section.text-block .section-header .section-subtitle {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  section.text-block .section-text {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    width: 50%;
+  }
+}
 section.about {
   background-color: #838383;
   position: relative;

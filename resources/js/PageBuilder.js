@@ -4,6 +4,7 @@ import PostsGalleryBuild from './components/postsGallery.js';
 import FooterBuild from './components/footer.js';
 import CopyrightAndSocialBuild from './components/copyrightAndSocial.js';
 import AboutBuild from './components/about.js';
+import TextBlockBuild from './components/textBlock.js';
 import ContactBuild from './components/contact.js';
 
 export default class PageBuilder {
@@ -32,6 +33,10 @@ export default class PageBuilder {
 
     createCopyrightAndSocial = function(copyright, socialmedia) {
         CopyrightAndSocialBuild(copyright, socialmedia, this.reference);
+    }
+
+    createTextBlock = function(blockTitle, blockSubtitle, blockText) {
+        TextBlockBuild(blockTitle, blockSubtitle, blockText, this.reference);
     }
 
     createAbout = function(aboutTitle, aboutSubtitle, aboutText) {
