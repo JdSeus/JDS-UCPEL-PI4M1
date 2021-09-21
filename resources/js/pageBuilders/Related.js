@@ -12,12 +12,13 @@ export default class Related {
     const related = content.related;
     const general = content.general;
 
+    const textBlock = related.content.textblock;
     const footer = general.footer;
     const copyrightAndSocial = general.copyrightAndSocial;
 
     pageBuilder.setPageTitle(related.title);
     pageBuilder.createMenu(menuLinks, currentRoute);
-
+    pageBuilder.createTextBlock(textBlock.title, textBlock.subtitle, textBlock.text);
     pageBuilder.createFooter(footer.footerItems);
     pageBuilder.createCopyrightAndSocial(copyrightAndSocial.copyright, copyrightAndSocial.socialmedia);
 

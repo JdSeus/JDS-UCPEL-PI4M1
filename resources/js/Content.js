@@ -31,7 +31,7 @@ export default class Content {
     about = {
         title: "Sobre Nós",
         content: {
-            about: {
+            textblock: {
                 title: "Sobre Nós",
                 subtitle: "Um pouco sobre Nós",
                 text: [
