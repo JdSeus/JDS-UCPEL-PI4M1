@@ -2,6 +2,7 @@ import Vendor from './vendor/vendor.js';
 import JdsParallax from './vendor/JdsParallax.js';
 import Router from './Router.js';
 import General from './General.js';
+import Search from './Search.js';
 //import Home from './Home.js';
 
 export default class Main { 
@@ -14,6 +15,9 @@ static main = function() {
     
     JdsParallax();
 
+    var search = new Search();
+    search.Search();
+    /*
     var theGreatGatsby = {
         isbn: '9781597226769',
         title: 'The Great Gatsby',
@@ -50,6 +54,7 @@ static main = function() {
       console.log(search.search('scott'));  // [theGreatGatsby]
       console.log(search.search('dan'));    // [angelsAndDemons, theDaVinciCode]
       console.log(search.search('mystery')) // [angelsAndDemons, theDaVinciCode]
+      */
     /*
     Vendor();
     const pageInformation = new General();

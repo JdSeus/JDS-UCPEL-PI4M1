@@ -11,6 +11,7 @@ export default class Content {
     ]
 
     home = {
+        route: "home",
         title: "Home",
         content: {
             carousel: [
@@ -29,6 +30,7 @@ export default class Content {
     }
 
     about = {
+        route: "about",
         title: "Sobre Nós",
         content: {
             textblock: {
@@ -43,6 +45,7 @@ export default class Content {
     }
 
     services = {
+        route: "services",
         title: "Nossos Serviços",
         content: {
             textblock: {
@@ -57,6 +60,7 @@ export default class Content {
     }
 
     related = {
+        route: "related",
         title: "Páginas Relacionadas",
         content: {
             textblock: {
@@ -71,6 +75,7 @@ export default class Content {
     }
 
     contact = {
+        route: "contact",
         title: "Contato",
         content: {
             form: {
