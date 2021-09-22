@@ -11,30 +11,6 @@
     </div>   
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    <script src="https://unpkg.com/lunr/lunr.js"></script>
     <script src="./resources/js/app.js" type="module"></script>
-    <script>
-var documents = [{
-  "name": "Lunr",
-  "text": "Like Solr, but much smaller, and not as bright."
-}, {
-  "name": "React",
-  "text": "A JavaScript library for building user interfaces."
-}, {
-  "name": "Lodash",
-  "text": "A modern JavaScript utility library delivering modularity, performance & extras."
-}]
-
-var idx = lunr(function () {
-  this.ref('name')
-  this.field('text')
-
-  documents.forEach(function (doc) {
-    this.add(doc)
-  }, this)
-})
-
-console.log(idx.search("bright"))
-    </script>
 </body>
 </html>
