@@ -22,29 +22,39 @@ header {
         position: relative;
         background-color: rgb(182, 221, 255);
         padding: 0 $mobilegrid;
-        display: none;
         justify-content: space-between;
         align-items: stretch;
-        height: $f60;
+        height: auto;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
         #menu {
+            flex-direction: column;
             position: relative;
             display: flex;
             .menu-link {
+                margin-top: 0.5rem;
+                margin-bottom: 0.5rem;
                 height: 100%;
                 display: flex;
                 align-items: center;
                 padding: 0 1rem;
             }
             .menu-link.active {
+                a {
+                    border-bottom: $f4 solid blue;
+                }
                 background-color: rgb(217, 231, 243);
-                border-bottom: $f4 solid blue;
+                border-bottom: none;
             }
         }
         .search-container {
+            align-self: center;
             .search {
+                margin-left: 0.5rem;
                 display: block;
-                background-color: red;
+                background-color: white;
                 height: 2em;
+                border: 2px solid rgb(196, 194, 194)
             }
         }
     }
@@ -58,6 +68,26 @@ header {
     .header-content {
         padding: 0 $desktopgrid;
         display: flex;
+        height: $f60;
+        #menu {
+            flex-direction: row;
+            .menu-link {
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+            .menu-link.active {
+                a {
+                    border-bottom: none;
+                }
+                background-color: rgb(217, 231, 243);
+                border-bottom: $f4 solid blue;
+            }
+        }
+        .search-container {
+            .search {
+                margin-left: 0;
+            }
+        }
     }
 }
 }
