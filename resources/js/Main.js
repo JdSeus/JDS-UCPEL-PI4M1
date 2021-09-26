@@ -14,10 +14,6 @@ static main = function() {
     
     JdsParallax();
 
-    
-    
-    console.log();
-
     $('#searchinput').keydown(function() {
       if(event.key === 'Enter') {
         var input = $(this).val();
