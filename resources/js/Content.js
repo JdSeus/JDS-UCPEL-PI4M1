@@ -10,6 +10,22 @@ export default class Content {
         {link: "./contact.html", text: "Contato", route: "contact"},
     ]
 
+    noresults = {
+        route: "noresults",
+        title: "Sem Resultado",
+        content: {
+            textblock: {
+                title: "",
+                subtitle: "Sem resultados para esta pesquisa",
+                text: [
+                    {phrase: "<br>"},
+                    {phrase: "Não foi possível encontrar resultados para essa informação."},
+                    {phrase: "<br>"},
+                ]
+            }
+        }
+    }
+
     home = {
         route: "home",
         title: "Home",

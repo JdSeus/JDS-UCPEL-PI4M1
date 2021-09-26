@@ -1,3 +1,4 @@
+import Noresults from './pageBuilders/Noresults.js';
 import Home from './pageBuilders/Home.js';
 import About from './pageBuilders/About.js';
 import Services from './pageBuilders/Services.js';
@@ -32,14 +33,14 @@ export default class Router {
         if (this.route) {
             switch (this.route) {
                 case 'noresults':
-                    //Contact.contactBuilder(this.route);
+                    Noresults.noresultsBuilder(this.route);
                     break;
                 case 'home':
-                  Home.homeBuilder(this.route);
-                  break;
+                    Home.homeBuilder(this.route);
+                    break;
                 case 'about':
-                  About.aboutBuilder(this.route);
-                  break;
+                    About.aboutBuilder(this.route);
+                    break;
                 case 'services':
                     Services.servicesBuilder(this.route);
                     break;
