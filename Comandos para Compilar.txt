@@ -1,0 +1,2 @@
+sass --watch ./resources/sass/app.scss ./dist/app.css
+npx webpack --config webpack.config.js
