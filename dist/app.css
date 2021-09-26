@@ -633,12 +633,19 @@ footer {
   max-width: 100vw;
   overflow: hidden;
 }
-footer .bi-clock {
+footer .bi {
   color: aqua;
 }
+footer a:hover {
+  color: white;
+}
+footer a:hover p {
+  color: white;
+}
 footer .footer-items-container {
+  padding-top: 2rem;
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
   position: relative;
 }
 footer .footer-items-container .footer-item {
@@ -651,14 +658,30 @@ footer .footer-items-container .footer-item h3 {
   margin-bottom: 0.5em;
 }
 footer .footer-items-container .footer-item p {
+  color: #bebebe;
   margin-bottom: 1em;
 }
+footer .footer-items-container .footer-item span {
+  color: #bebebe;
+}
+footer .footer-items-container .footer-item .footer-posts .footer-post-item {
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  border-bottom: 1px solid gray;
+}
 footer .footer-items-container .footer-item .footer-posts .footer-post-item p {
+  margin-bottom: 0.5em;
+}
+footer .footer-items-container .footer-item .footer-posts .footer-post-item .footer-post-item-data {
+  font-size: 0.9em;
+}
+footer .footer-items-container .footer-item .footer-posts .footer-post-item .footer-post-item-data p {
   margin-bottom: 0;
 }
 
 @media (min-width: 1200px) {
   footer .footer-items-container {
+    padding-top: 0;
     flex-direction: row;
   }
   footer .footer-items-container .footer-item {

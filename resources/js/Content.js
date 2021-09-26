@@ -19,7 +19,9 @@ export default class Content {
                 subtitle: "Sem resultados para esta pesquisa",
                 text: [
                     {phrase: "<br>"},
+                    {phrase: "<br>"},
                     {phrase: "Não foi possível encontrar resultados para essa informação."},
+                    {phrase: "<br>"},
                     {phrase: "<br>"},
                 ]
             }
@@ -126,9 +128,12 @@ export default class Content {
                     title: "Tags",
                     content: [
                         {
-                                tags: [
-                                {name: "apps", link:"#", size:"16px"},
-                                {name: "blog", link:"#", size:"32px"},
+                            tags: [
+                                {name: "Sobre", link:"./about.html", size:"16px"},
+                                {name: "Início", link:"./home.html", size:"32px"},
+                                {name: "Serviços Oferecidos", link:"./services.html", size:"20px"},
+                                {name: "Páginas Relacionadas", link:"./related.html", size:"14px"},
+                                {name: "Contato", link:"./contact.html", size:"28px"},
                             ]
                         }
                     ]
@@ -154,9 +159,9 @@ export default class Content {
                         },
                         {
                             footerInfo: [
-                                {icon: "location-outline", info: "Texas, US"},
-                                {icon: "mail-outline", info: "email@email.com"},
-                                {icon: "call-outline", info: "890-09880-45590"},
+                                {icon: "bi-geo-alt-fill", info: "Texas, US"},
+                                {icon: "bi-envelope-fill", info: "email@email.com"},
+                                {icon: "bi-telephone-fill", info: "890-09880-45590"},
                             ]
                         },
                     ]

@@ -17,7 +17,7 @@ export default function (footerItems, reference) {
                             cont.footerPosts.forEach((post) => {
                                 footerItemsContent = footerItemsContent + `
                                     <div class="footer-post-item">
-                                        <p>`+ post.text +`</p>
+                                        <a href="#"><p>`+ post.text +`</p></a>
                                         <div class="footer-post-item-data">
                                             <i class="bi bi-clock"></i> <span>`+ post.date +`</span>
                                         </div>
@@ -50,7 +50,7 @@ export default function (footerItems, reference) {
                             cont.footerInfo.forEach((info) => {
                                 footerItemsContent = footerItemsContent + `
                                     <div class="footer-info-item">
-                                        <ion-icon name="`+ info.icon +`"></ion-icon><span>`+ info.info +`</span>
+                                        <i class="bi `+ info.icon +`"></i>&nbsp&nbsp<span>`+ info.info +`</span>
                                     </div>
                                 `;
                             });
