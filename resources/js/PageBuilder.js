@@ -1,11 +1,11 @@
-import MenuBuild from './components/menu.js';
-import CarouselBuild from './components/carousel.js';
-import PostsGalleryBuild from './components/postsGallery.js';
-import FooterBuild from './components/footer.js';
-import CopyrightAndSocialBuild from './components/copyrightAndSocial.js';
-import AboutBuild from './components/about.js';
-import TextBlockBuild from './components/textBlock.js';
-import ContactBuild from './components/contact.js';
+import MenuBuild from './components/Menu.js';
+import CarouselBuild from './components/Carousel.js';
+import PostsGalleryBuild from './components/PostsGallery.js';
+import FooterBuild from './components/Footer.js';
+import CopyrightAndSocialBuild from './components/CopyrightAndSocial.js';
+import AboutBuild from './components/About.js';
+import TextBlockBuild from './components/TextBlock.js';
+import ContactBuild from './components/Contact.js';
 
 export default class PageBuilder {
 
