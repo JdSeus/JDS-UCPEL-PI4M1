@@ -15,66 +15,27 @@ static main = function() {
     
     JdsParallax();
 
-    var search = new Search();
-    search.Search();
-    /*
-    var theGreatGatsby = {
-        isbn: '9781597226769',
-        title: 'The Great Gatsby',
-        author: {
-          name: 'F. Scott Fitzgerald'
-        },
-        tags: ['book', 'inspirational']
-      };
-      var theDaVinciCode = {
-        isbn: '0307474275',
-        title: 'The DaVinci Code',
-        author: {
-          name: 'Dan Brown'
-        },
-        tags: ['book', 'mystery']
-      };
-      var angelsAndDemons = {
-        isbn: '074349346X',
-        title: 'Angels & Demons',
-        author: {
-          name: 'Dan Brown',
-        },
-        tags: ['book', 'mystery']
-      };
-      
-      var search = new JsSearch.Search('isbn');
-      search.addIndex('title');
-      search.addIndex(['author', 'name']);
-      search.addIndex('tags')
-      
-      search.addDocuments([theGreatGatsby, theDaVinciCode, angelsAndDemons]);
-      
-      console.log(search.search('The'));    // [theGreatGatsby, theDaVinciCode]
-      console.log(search.search('scott'));  // [theGreatGatsby]
-      console.log(search.search('dan'));    // [angelsAndDemons, theDaVinciCode]
-      console.log(search.search('mystery')) // [angelsAndDemons, theDaVinciCode]
-      */
-    /*
-    Vendor();
-    const pageInformation = new General();
+    
+    
+    console.log();
 
-    pageInformation.initializePage();
+    $('#searchinput').keydown(function() {
+      if(event.key === 'Enter') {
+        var input = $(this).val();
+        $(this).val('');
 
-    if (pageInformation.route) {
-        if (pageInformation.route == "Home") {
-            Home();
+        var search = new Search();
+        var searchResult = search.Search(input);
+
+        if (searchResult && searchResult.length > 0) {
+          var routeOfSearch = searchResult[0].route;
+          window.location.href = `./${routeOfSearch}.html`;
         }
+        
     }
-    */
-/*
-    const content = new Content();
-    console.log(content.appInformation);
-    console.log(content.home);
+    });
 
-    const pageBuilder = new PageConstructor();
-    pageBuilder.createMenu("nada");
-    */
+
 }
 
 }

@@ -31,7 +31,7 @@ export default function (menuLinks, route, reference) {
                 `
             </nav>
             <div class="search-container">
-                <input class="search" type="search">
+                <input id="searchinput" class="search" type="search"/>
             </div>
         </div>
     </header>

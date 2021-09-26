@@ -118,7 +118,7 @@ export default class Content {
                     ]
                 },
                 {
-                    title: "Tags",
+                    title: "A Little About Us",
                     content: [
                         {
                             text: [

@@ -31,6 +31,9 @@ export default class Router {
     callConstructorOfPage = function() {
         if (this.route) {
             switch (this.route) {
+                case 'noresults':
+                    //Contact.contactBuilder(this.route);
+                    break;
                 case 'home':
                   Home.homeBuilder(this.route);
                   break;
