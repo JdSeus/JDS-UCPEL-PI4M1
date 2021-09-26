@@ -38,23 +38,12 @@ section.text-block {
     }
 }
 
-@media (min-width: $lg) {
+@media (min-width: $xl) {
 section.text-block {
     .section-header {
         width: 50%;
-        .section-title {
-            padding-left: 2rem;
-            padding-right: 2rem;
-        }
-    
-        .section-subtitle {
-            padding-left: 2rem;
-            padding-right: 2rem;
-        }
     }
     .section-text {
-        padding-left: 2rem;
-        padding-right: 2rem;
         width: 50%;
     }
 }   

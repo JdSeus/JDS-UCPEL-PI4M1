@@ -805,21 +805,11 @@ section.text-block .section-text p {
   margin-bottom: 1em;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
   section.text-block .section-header {
     width: 50%;
   }
-  section.text-block .section-header .section-title {
-    padding-left: 2rem;
-    padding-right: 2rem;
-  }
-  section.text-block .section-header .section-subtitle {
-    padding-left: 2rem;
-    padding-right: 2rem;
-  }
   section.text-block .section-text {
-    padding-left: 2rem;
-    padding-right: 2rem;
     width: 50%;
   }
 }
@@ -859,21 +849,11 @@ section.about .section-text p {
   margin-bottom: 1em;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
   section.about .section-header {
     width: 50%;
   }
-  section.about .section-header .section-title {
-    padding-left: 2rem;
-    padding-right: 2rem;
-  }
-  section.about .section-header .section-subtitle {
-    padding-left: 2rem;
-    padding-right: 2rem;
-  }
   section.about .section-text {
-    padding-left: 2rem;
-    padding-right: 2rem;
     width: 50%;
   }
 }
