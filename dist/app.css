@@ -633,6 +633,9 @@ footer {
   max-width: 100vw;
   overflow: hidden;
 }
+footer .bi-clock {
+  color: aqua;
+}
 footer .footer-items-container {
   display: flex;
   flex-direction: column;

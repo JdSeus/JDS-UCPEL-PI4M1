@@ -19,7 +19,7 @@ export default function (footerItems, reference) {
                                     <div class="footer-post-item">
                                         <p>`+ post.text +`</p>
                                         <div class="footer-post-item-data">
-                                            <ion-icon name="time-outline"></ion-icon><span>`+ post.date +`</span>
+                                            <i class="bi bi-clock"></i> <span>`+ post.date +`</span>
                                         </div>
                                     </div>
                                 `;
